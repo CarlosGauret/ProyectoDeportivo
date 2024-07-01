@@ -55,7 +55,7 @@ struct Players {
                 tarjetas_rojas: "0",
                 goles: "0",
                 imagenNombre: "Romero",
-                servImages:["FIGURA1", "FIGURA2", "FIGURA3","FIGURA4", "FIGURA1", "FIGURA2", "FIGURA3","FIGURA4"]
+                servImages:["FIGURA1", "FIGURA1", "FIGURA1","FIGURA1", "FIGURA1", "FIGURA1", "FIGURA1","FIGURA1"]
             ),
             PlayerData(
                 nombre: "Luis Advíncula",
@@ -67,7 +67,7 @@ struct Players {
                 tarjetas_rojas: "2",
                 goles: "2",
                 imagenNombre: "Advincula",
-                servImages:["FIGURA1", "FIGURA2", "FIGURA3","FIGURA4", "FIGURA1", "FIGURA2", "FIGURA3","FIGURA4"]
+                servImages:["FIGURA1", "FIGURA1", "FIGURA1","FIGURA1", "FIGURA1", "FIGURA1", "FIGURA1","FIGURA1"]
             ),
             PlayerData(
                 nombre: "Miguel Araujo",
@@ -79,7 +79,7 @@ struct Players {
                 tarjetas_rojas: "1",
                 goles: "3",
                 imagenNombre: "Araujo",
-                servImages:["FIGURA1", "FIGURA2", "FIGURA3","FIGURA4", "FIGURA1", "FIGURA2", "FIGURA3","FIGURA4"]
+                servImages:["FIGURA1", "FIGURA1", "FIGURA1","FIGURA1", "FIGURA1", "FIGURA1", "FIGURA1","FIGURA1"]
             ),
             PlayerData(
                 nombre: "Alexander Callens",
@@ -91,7 +91,7 @@ struct Players {
                 tarjetas_rojas: "0",
                 goles: "2",
                 imagenNombre: "Callens",
-                servImages:["FIGURA1", "FIGURA2", "FIGURA3","FIGURA4", "FIGURA1", "FIGURA2", "FIGURA3","FIGURA4"]
+                servImages:["FIGURA1", "FIGURA1", "FIGURA1","FIGURA1", "FIGURA1", "FIGURA1", "FIGURA1","FIGURA1"]
             ),
             PlayerData(
                 nombre: "Marcos López",
@@ -103,7 +103,7 @@ struct Players {
                 tarjetas_rojas: "0",
                 goles: "2",
                 imagenNombre: "Lopez",
-                servImages:["FIGURA1", "FIGURA2", "FIGURA3","FIGURA4", "FIGURA1", "FIGURA2", "FIGURA3","FIGURA4"]
+                servImages:["FIGURA1", "FIGURA1", "FIGURA1","FIGURA1", "FIGURA1", "FIGURA1", "FIGURA1","FIGURA1"]
             ),
             PlayerData(
                 nombre: "Anderson Santamaría",
@@ -115,7 +115,7 @@ struct Players {
                 tarjetas_rojas: "1",
                 goles: "1",
                 imagenNombre: "SantaMaria",
-                servImages:["FIGURA1", "FIGURA2", "FIGURA3","FIGURA4", "FIGURA1", "FIGURA2", "FIGURA3","FIGURA4"]
+                servImages:["FIGURA1", "FIGURA1", "FIGURA1","FIGURA1", "FIGURA1", "FIGURA1", "FIGURA1","FIGURA1"]
             ),
             PlayerData(
                 nombre: "Oliver Sonne",
@@ -127,7 +127,7 @@ struct Players {
                 tarjetas_rojas: "0",
                 goles: "0",
                 imagenNombre: "Sonne",
-                servImages:["FIGURA1", "FIGURA2", "FIGURA3","FIGURA4", "FIGURA1", "FIGURA2", "FIGURA3","FIGURA4"]
+                servImages:["FIGURA1", "FIGURA1", "FIGURA1","FIGURA1", "FIGURA1", "FIGURA1", "FIGURA1","FIGURA1"]
             ),
             PlayerData(
                 nombre: "Luis Abram",

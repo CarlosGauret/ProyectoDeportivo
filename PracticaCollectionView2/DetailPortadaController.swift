@@ -28,7 +28,8 @@ class DetailPortadaController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+               // Desactivar el scroll
+               fotosCollectionView.isScrollEnabled = false
         
         if let detailPortada = detailPortada {
             namePlayLbl.text = detailPortada.nombre
@@ -69,9 +70,13 @@ extension DetailPortadaController: UICollectionViewDataSource, UICollectionViewD
       
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size = (collectionView.frame.size.width - 10) / 2
+        let size = (collectionView.frame.size.width - 45) / 2
         return CGSize(width: size, height: size)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+            return UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
+        }
 }
 
 
