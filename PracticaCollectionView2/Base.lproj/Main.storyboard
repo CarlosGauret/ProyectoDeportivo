@@ -18,10 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancha" id="3iO-Up-ylo">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XZa-gA-Mes">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ckQ-KH-2NY">
                                 <rect key="frame" x="0.0" y="250" width="393" height="602"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -100,15 +100,20 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XZa-gA-Mes" secondAttribute="trailing" id="0Ne-fh-ryW"/>
                             <constraint firstItem="ckQ-KH-2NY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5Y9-jA-FP6"/>
+                            <constraint firstItem="XZa-gA-Mes" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="G4P-SU-VnB"/>
                             <constraint firstItem="ckQ-KH-2NY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="250" id="IqZ-Os-UMd"/>
                             <constraint firstItem="ckQ-KH-2NY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="O8a-BC-zqU"/>
+                            <constraint firstItem="XZa-gA-Mes" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PuS-ou-8YB"/>
                             <constraint firstAttribute="bottom" secondItem="ckQ-KH-2NY" secondAttribute="bottom" id="Ygi-SX-Rih"/>
+                            <constraint firstAttribute="bottom" secondItem="XZa-gA-Mes" secondAttribute="bottom" id="gvb-2P-dgN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hC6-ZX-RpG"/>
                     <connections>
                         <outlet property="portadaCollectionView" destination="ckQ-KH-2NY" id="6pY-gC-oh7"/>
+                        <outlet property="viewLottie" destination="XZa-gA-Mes" id="bnQ-po-LSu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -124,13 +129,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rd5-ef-nQC">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="2035.666666666667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QLU-qG-dts">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="3584"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1500"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fotografia-estadios-deportivos" translatesAutoresizingMaskIntoConstraints="NO" id="spj-WH-yVh">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="3584"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="1500"/>
                                             </imageView>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qBm-gn-mRh">
                                                 <rect key="frame" x="0.0" y="110" width="393" height="374"/>
@@ -260,7 +265,7 @@
                                                 </constraints>
                                             </view>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iAU-ML-rW5">
-                                                <rect key="frame" x="0.0" y="798" width="393" height="2786"/>
+                                                <rect key="frame" x="0.0" y="798" width="393" height="702"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CL7-Eb-it4">
                                                     <size key="itemSize" width="128" height="128"/>
@@ -296,7 +301,7 @@
                                             <constraint firstAttribute="trailing" secondItem="spj-WH-yVh" secondAttribute="trailing" id="B9E-UZ-9bD"/>
                                             <constraint firstAttribute="trailing" secondItem="qeM-yY-Ds5" secondAttribute="trailing" constant="20" id="D0E-1e-8pk"/>
                                             <constraint firstItem="qeM-yY-Ds5" firstAttribute="leading" secondItem="QLU-qG-dts" secondAttribute="leading" constant="20" id="GJy-7u-W3i"/>
-                                            <constraint firstAttribute="height" constant="1700" id="KUf-X3-VQL"/>
+                                            <constraint firstAttribute="height" constant="2500" id="KUf-X3-VQL"/>
                                             <constraint firstItem="iAU-ML-rW5" firstAttribute="top" secondItem="w0w-tm-h0f" secondAttribute="bottom" constant="20" id="L84-fb-fdm"/>
                                             <constraint firstAttribute="trailing" secondItem="iAU-ML-rW5" secondAttribute="trailing" id="M5S-9P-s0a"/>
                                             <constraint firstItem="qeM-yY-Ds5" firstAttribute="top" secondItem="QLU-qG-dts" secondAttribute="top" constant="505" id="a2p-K6-Roh"/>
@@ -378,7 +383,6 @@
         <image name="REDCARD" width="60" height="80"/>
         <image name="TORTA" width="50" height="50"/>
         <image name="YELLOWCARD" width="60" height="80"/>
-        <image name="cancha" width="560" height="420"/>
         <image name="fotografia-estadios-deportivos" width="5376" height="3584"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

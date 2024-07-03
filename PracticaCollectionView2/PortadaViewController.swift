@@ -6,21 +6,41 @@
 //
 
 import UIKit
+import Lottie
 
 class PortadaViewController: UIViewController {
     
     
     var portrait: [PlayerData] = Players.data()
     
+    
+    
+    @IBOutlet weak var viewLottie: UIView!
     @IBOutlet weak var portadaCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+   
+    
         portadaCollectionView.dataSource = self
         portadaCollectionView.delegate = self
         portadaCollectionView.collectionViewLayout = UICollectionViewFlowLayout()
         
-    }
+       
+        let animationView = LottieAnimationView.init(name: "bg_universo")
+ 
+        animationView.frame = viewLottie.bounds
+                animationView.contentMode = .scaleAspectFill
+        animationView.loopMode = .loop
+        viewLottie.addSubview(animationView)
+
+        // Reproduce la animación
+        animationView.play()
+        }
+        
+  
+        
+
 }
 
 extension PortadaViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
