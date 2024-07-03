@@ -16,6 +16,9 @@
 		D86E01BC2C2F89BD002A0E8E /* MiniPortadaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86E01BB2C2F89BD002A0E8E /* MiniPortadaCollectionViewCell.swift */; };
 		D86E01BE2C2F8B4C002A0E8E /* PlayerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86E01BD2C2F8B4C002A0E8E /* PlayerData.swift */; };
 		D86E01C22C321852002A0E8E /* DetailPortadaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86E01C12C321852002A0E8E /* DetailPortadaController.swift */; };
+		FDA123622C333A770011E7E6 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = FDA123612C333A770011E7E6 /* Lottie */; };
+		FDA123642C333E050011E7E6 /* bg_universo.json in Resources */ = {isa = PBXBuildFile; fileRef = FDA123632C333E050011E7E6 /* bg_universo.json */; };
+		FDA123662C3343830011E7E6 /* soccer.json in Resources */ = {isa = PBXBuildFile; fileRef = FDA123652C3343830011E7E6 /* soccer.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,8 @@
 		D86E01BB2C2F89BD002A0E8E /* MiniPortadaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPortadaCollectionViewCell.swift; sourceTree = "<group>"; };
 		D86E01BD2C2F8B4C002A0E8E /* PlayerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerData.swift; sourceTree = "<group>"; };
 		D86E01C12C321852002A0E8E /* DetailPortadaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPortadaController.swift; sourceTree = "<group>"; };
+		FDA123632C333E050011E7E6 /* bg_universo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bg_universo.json; sourceTree = "<group>"; };
+		FDA123652C3343830011E7E6 /* soccer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = soccer.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDA123622C333A770011E7E6 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +70,9 @@
 			children = (
 				D86E01A52C2F78F4002A0E8E /* AppDelegate.swift */,
 				D86E01A72C2F78F4002A0E8E /* SceneDelegate.swift */,
+				FDA123652C3343830011E7E6 /* soccer.json */,
 				D86E01BD2C2F8B4C002A0E8E /* PlayerData.swift */,
+				FDA123632C333E050011E7E6 /* bg_universo.json */,
 				D86E01C12C321852002A0E8E /* DetailPortadaController.swift */,
 				D86E01A92C2F78F4002A0E8E /* PortadaViewController.swift */,
 				D86E01BB2C2F89BD002A0E8E /* MiniPortadaCollectionViewCell.swift */,
@@ -92,6 +100,9 @@
 			dependencies = (
 			);
 			name = PracticaCollectionView2;
+			packageProductDependencies = (
+				FDA123612C333A770011E7E6 /* Lottie */,
+			);
 			productName = PracticaCollectionView2;
 			productReference = D86E01A22C2F78F4002A0E8E /* PracticaCollectionView2.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +131,9 @@
 				Base,
 			);
 			mainGroup = D86E01992C2F78F4002A0E8E;
+			packageReferences = (
+				FDA123602C333A770011E7E6 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = D86E01A32C2F78F4002A0E8E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -135,8 +149,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D86E01AF2C2F78F7002A0E8E /* Assets.xcassets in Resources */,
+				FDA123662C3343830011E7E6 /* soccer.json in Resources */,
 				D86E01B22C2F78F7002A0E8E /* Base in Resources */,
 				D86E01AD2C2F78F4002A0E8E /* Base in Resources */,
+				FDA123642C333E050011E7E6 /* bg_universo.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +328,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -345,7 +361,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -385,6 +401,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FDA123602C333A770011E7E6 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FDA123612C333A770011E7E6 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDA123602C333A770011E7E6 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D86E019A2C2F78F4002A0E8E /* Project object */;
 }
